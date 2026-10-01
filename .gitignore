@@ -216,3 +216,24 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# Secrets and local DB
+.env
+*.db
+*.sqlite3
+
+# ML: big files stay OUT of git
+ml/data/*
+!ml/data/.gitkeep
+ml/saved_model/*
+!ml/saved_model/.gitkeep
+*.pt
+*.bin
+*.safetensors
+*.pkl
+*.joblib
+*.csv
+
+# Node / React
+node_modules/
+frontend/build/
+frontend/dist/
